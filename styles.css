@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#skins-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.skin-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.skin-card img {
+    max-width: 100%;
+}
+
+.skin-card h2 {
+    margin: 10px 0;
+}
+
+.skin-card p {
+    font-weight: bold;
+}
+
+.skin-card button {
+    background-color: #0077FF;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+/* Estilização para o item em destaque */
+.highlighted {
+    background-color: rgb(95, 250, 103); /* Exemplo: fundo amarelo para destacar */
+}
+.skin-card:not(.highlighted) {
+    background-color: rgb(238, 83, 83); /* Fundo vermelho para itens não destacados */
+    color: white; /* Texto branco para itens não destacados */
+}
